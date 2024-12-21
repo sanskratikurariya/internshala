@@ -1,12 +1,12 @@
 import React from 'react';
-
+import star from "/public/assets/start2.svg"
 const Benifits = () => {
   return (
     <div className="mt-9 p-6 md:p-12 flex justify-center items-center pb-20 flex-col gap-16 lg:gap-32">
       <div className="flex justify-center items-center flex-col gap-6 sm:gap-8 md:gap-10">
       
         <div className="border-gray-600 bg-[#202020] w-32 sm:w-36 lg:w-44 p-3 sm:p-4 rounded-full flex justify-around items-center">
-          <img src="public/assets/start2.svg" className="w-5 sm:w-6 lg:w-7" alt="Start Icon" />
+          <img src={star} className="w-5 sm:w-6 lg:w-7" alt="Start Icon" />
           <p className="text-white text-xs sm:text-sm lg:text-lg">Our Benefits</p>
         </div>
 
