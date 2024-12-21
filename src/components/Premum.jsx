@@ -1,23 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Ani3 from "./Ani3";
+import graph from "/public/assets/graph.avif";
+import gymphone from "/public/assets/gymphone.avif";
+import planweak from "/public/assets/planweak.avif";
+import dumble from "/public/assets/dumble.avif";
 
 const Premium = () => {
-  const images = [
-    "assets/graph.avif",
-    "assets/gymphone.avif",
-    "assets/planweak.avif",
-  ];
+  // Corrected images array
+  const images = [graph, gymphone, planweak];
 
   return (
     <div className="pt-7">
-
       <div className="w-full md:flex md:justify-between p-3 gap-6">
-       
         <div className="w-full md:w-1/2 flex flex-col gap-6">
           <div className="bg-black relative">
             <img
-              src="/assets/dumble.avif"
+              src={dumble}
               className="h-[300px] sm:h-[400px] md:h-[500px] w-full object-cover opacity-20"
               alt="Dumbbell"
             />
@@ -38,7 +37,6 @@ const Premium = () => {
           </div>
         </div>
 
-     
         <div className="w-full md:w-1/2 relative h-[400px] overflow-hidden flex items-center justify-center">
           <motion.div
             className="absolute flex flex-col gap-6"
@@ -56,7 +54,7 @@ const Premium = () => {
                 key={index}
                 className="w-full h-[300px] sm:h-[350px] md:h-[400px] flex-shrink-0 flex items-center justify-center"
                 initial={{ y: -100, opacity: 0.5 }}
-                animate={{ y: 0, opacity: 6 }}
+                animate={{ y: 0, opacity: 1 }} // Adjusted opacity to 1
                 transition={{
                   type: "spring",
                   stiffness: 500,
@@ -84,7 +82,6 @@ const Premium = () => {
         </div>
       </div>
 
-     
       <Ani3 />
     </div>
   );

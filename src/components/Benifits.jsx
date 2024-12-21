@@ -1,5 +1,10 @@
 import React from 'react';
 import star from "/public/assets/start2.svg"
+import icon from "/public/assets/icon.svg"
+import earth from "/public/assets/earth.svg"
+import phone from "/public/assets/phone.avif"
+import gymphone from "/public/assets/gymphone.avif"
+import smile from "/public/assets/smile.svg"
 const Benifits = () => {
   return (
     <div className="mt-9 p-6 md:p-12 flex justify-center items-center pb-20 flex-col gap-16 lg:gap-32">
@@ -29,7 +34,7 @@ const Benifits = () => {
     
           <div className="border h-auto p-5 rounded-xl w-full max-w-[600px] border-gray-900 bg-[#090909] flex flex-col gap-4 sm:gap-6">
             <div className="h-12 w-12 sm:h-14 sm:w-14 p-3 border rounded-xl flex items-center justify-center border-gray-900 bg-[#1b1b1b]">
-              <img src="public/assets/icon.svg" className="h-8 w-8 sm:h-9 sm:w-9" alt="Icon" />
+              <img src={icon} className="h-8 w-8 sm:h-9 sm:w-9" alt="Icon" />
             </div>
             <div>
               <h1 className="font-title text-red-600 text-lg sm:text-xl md:text-2xl font-bold">
@@ -44,7 +49,7 @@ const Benifits = () => {
         
           <div className="border h-auto p-5 rounded-xl w-full max-w-[600px] border-gray-900 bg-[#090909] flex flex-col gap-4 sm:gap-6">
             <div className="h-12 w-12 sm:h-14 sm:w-14 p-3 border rounded-xl flex items-center justify-center border-gray-900 bg-[#1b1b1b]">
-              <img src="public/assets/earth.svg" className="h-8 w-8 sm:h-9 sm:w-9" alt="Icon" />
+              <img src={earth} className="h-8 w-8 sm:h-9 sm:w-9" alt="Icon" />
             </div>
             <div>
               <h1 className="font-title text-red-600 text-lg sm:text-xl md:text-2xl font-bold">
@@ -60,12 +65,12 @@ const Benifits = () => {
       
         <div className="relative lg:w-1/3 w-full flex justify-center lg:order-none order-first">
           <img
-            src="public/assets/phone.avif"
+            src={phone}
             className="h-[300px] w-[150px] sm:h-[350px] sm:w-[200px] lg:h-[450px] lg:w-[250px] mx-auto"
             alt=""
           />
           <img
-            src="public/assets/gymphone.avif"
+            src={gymphone}
             className="h-[200px] w-[130px] sm:h-[300px] sm:w-[180px] lg:h-[400px] lg:w-[220px] absolute top-6 left-1/2 transform -translate-x-1/2 rounded-2xl"
             alt=""
           />
@@ -91,12 +96,8 @@ const Benifits = () => {
           
           <div className="border h-auto p-5 rounded-xl w-full max-w-[600px] border-gray-900 bg-[#090909] flex flex-col gap-4 sm:gap-6">
             <div className="h-12 w-12 sm:h-14 sm:w-14 p-3 border rounded-xl flex items-center justify-center border-gray-900 bg-[#1b1b1b]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" fill="none">
-                <path
-                  fill="#fff"
-                  d="..."
-                />
-              </svg>
+            <img src={smile} className="h-8 w-8 sm:h-9 sm:w-9" alt="Icon" />
+            
             </div>
             <div>
               <h1 className="font-title text-red-600 text-lg sm:text-xl md:text-2xl font-bold">

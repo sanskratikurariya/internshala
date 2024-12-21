@@ -1,5 +1,9 @@
 import React from 'react';
-
+import green from "/public/assets/greenrope.avif"
+import yoga from "/public/assets/yoga.avif"
+import boxing from "/public/assets/boxing.avif"
+import zumba from "/public/assets/zumba.avif"
+import swimming from "/public/assets/swimming.avif"
 const Track = () => {
   return (
     <div className="w-full">
@@ -7,7 +11,7 @@ const Track = () => {
       
         <div className="relative h-32 sm:h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] w-full sm:w-[100%] overflow-hidden group">
           <img
-            src="/public/assets/greenrope.avif"
+            src={green}
             className="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110"
             alt="Green Rope"
           />
@@ -20,7 +24,7 @@ const Track = () => {
       
         <div className="relative h-32 sm:h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] w-full sm:w-[100%] overflow-hidden group">
           <img
-            src="/public/assets/yoga.avif"
+            src={yoga}
             className="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110"
             alt="Yoga"
           />
@@ -33,7 +37,7 @@ const Track = () => {
       
         <div className="relative h-32 sm:h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] w-full sm:w-[100%] overflow-hidden group">
           <img
-            src="/public/assets/boxing.avif"
+            src={boxing}
             className="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110"
             alt="Boxing"
           />
@@ -46,7 +50,7 @@ const Track = () => {
       
         <div className="relative h-32 sm:h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] w-full sm:w-[100%] overflow-hidden group">
           <img
-            src="/public/assets/zumba.avif"
+            src={zumba}
             className="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110"
             alt="Zumba"
           />
@@ -59,7 +63,7 @@ const Track = () => {
     
         <div className="relative h-32 sm:h-64 md:h-[400px] lg:h-[500px] xl:h-[600px] w-full sm:w-[100%] overflow-hidden group">
           <img
-            src="/public/assets/swimming.avif"
+            src={swimming}
             className="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-110"
             alt="Swimming"
           />

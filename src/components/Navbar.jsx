@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo3 from "/public/assets/logo3.svg"
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,7 +9,7 @@ const Navbar = () => {
       
         <div className="flex items-center space-x-2">
           <img
-            src="/assets/logo3.svg"
+            src={logo3}
             alt="GymFluencer Logo"
             className="w-6 h-6 md:w-10 md:h-10"
           />
